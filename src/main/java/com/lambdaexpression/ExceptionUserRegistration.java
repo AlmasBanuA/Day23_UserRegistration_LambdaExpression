@@ -17,6 +17,7 @@ import java.util.regex.Pattern;
  * UC6- Rule2 – Should have at least 1 Upper Case
  * UC7- Rule3- Should have at least 1 numeric number in the password
  * UC8- Rule4- Should have at Exactly 1 Special Character in the password
+ * UC9- Should clear all email samples provided separately
  * @author user-Almas
  *
  */
