@@ -144,4 +144,23 @@ public class ExceptionUserRegistrationTest {
 		boolean actualResult = exceptionUserRegistration.passwordRule3("Afrojhgds");
 		Assert.assertEquals(false, actualResult);
 	}
+
+	@Test
+	/**
+	 * created method givePasswordRule4_IsProper_ReturnTrue() for true condition
+	 */
+	public void givenPasswordRule4_IsProper_ReturnTrue() {
+		boolean actualResult = exceptionUserRegistration.passwordRule4("Afroj@786");
+		Assert.assertEquals(true, actualResult);
+	}
+
+	@Test
+	/**
+	 * created method givePasswordRule4_IsNotProper_ReturnFalse() for false
+	 * condition
+	 */
+	public void givenPasswordRule4_IsNotProper_ReturnFalse() {
+		boolean actualResult = exceptionUserRegistration.passwordRule4("Afroj786");
+		Assert.assertEquals(false, actualResult);
+	}
 }
