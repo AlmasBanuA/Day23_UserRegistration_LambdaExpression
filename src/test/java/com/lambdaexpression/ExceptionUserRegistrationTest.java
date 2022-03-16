@@ -18,7 +18,7 @@ public class ExceptionUserRegistrationTest {
 		/**
 		 * calling lastName method to see lastname is valid or not
 		 */
-		boolean actualResult = exceptionUserRegistration.lastName("Almas");
+		boolean actualResult = exceptionUserRegistration.lastName("Advani");
 		Assert.assertEquals(true, actualResult);
 	}
 
@@ -27,7 +27,7 @@ public class ExceptionUserRegistrationTest {
 	 * created method givenLastName_IsProper_ReturnFalse() for false condition
 	 */
 	public void givenLastName_IsProper_ReturnFalse() {
-		boolean actualResult = exceptionUserRegistration.lastName("almas");
+		boolean actualResult = exceptionUserRegistration.lastName("advani");
 		Assert.assertEquals(false, actualResult);
 	}
 }
