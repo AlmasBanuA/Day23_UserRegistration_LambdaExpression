@@ -7,7 +7,8 @@ public class ExceptionUserRegistrationTest {
 	ExceptionUserRegistration exceptionUserRegistration = new ExceptionUserRegistration();
 
 	/**
-	 * testCases for validating firstName,lastName, emailId and phone Number
+	 * testCases for validating firstName,lastName, emailId, phone Number and
+	 * password
 	 *
 	 */
 	@Test
@@ -84,6 +85,25 @@ public class ExceptionUserRegistrationTest {
 	 */
 	public void givenMobileNumber_IsNotProper_ReturnFalse() {
 		boolean actualResult = exceptionUserRegistration.phoneNumber("91 907552833047");
+		Assert.assertEquals(false, actualResult);
+	}
+
+	@Test
+	/**
+	 * created method givePasswordRule1_IsProper_ReturnTrue() for true condition
+	 */
+	public void givenPasswordRule1_IsProper_ReturnTrue() {
+		boolean actualResult = exceptionUserRegistration.passwordRule1("abcdefghi");
+		Assert.assertEquals(true, actualResult);
+	}
+
+	@Test
+	/**
+	 * created method givePasswordRule1_IsNotProper_ReturnFalse() for false
+	 * condition
+	 */
+	public void givenPasswordRule1_IsNotProper_ReturnFalse() {
+		boolean actualResult = exceptionUserRegistration.passwordRule1("abcd");
 		Assert.assertEquals(false, actualResult);
 	}
 }
