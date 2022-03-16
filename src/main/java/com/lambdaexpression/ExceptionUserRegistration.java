@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
  * UC7- Rule3- Should have at least 1 numeric number in the password
  * UC8- Rule4- Should have at Exactly 1 Special Character in the password
  * UC9- Should clear all email samples provided separately
+ * UC10- Junit Test for Happy as well as Sad test case.
  * @author user-Almas
  *
  */
