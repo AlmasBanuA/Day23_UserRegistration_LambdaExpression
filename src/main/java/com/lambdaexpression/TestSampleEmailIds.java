@@ -22,4 +22,24 @@ public class TestSampleEmailIds {
 		Matcher matcher = pattern.matcher(validEmails);
 		return matcher.matches();
 	}
+
+	/**
+	 * created method testSampleEmailId that throws Exception
+	 * 
+	 * @param validEmails -pass valid emails
+	 * @return -return to method created
+	 * @throws InputInvalidException
+	 */
+	public boolean testSampleEmailId(String validEmails) throws InputInvalidException {
+		try {
+			if (!testForValidEmails(validEmails)) {
+				throw new InputInvalidException("Entered EmailId is Invalid");
+			} else {
+				System.out.println("Entered EmailId is Valid");
+			}
+		} catch (InputInvalidException e) {
+			System.out.println("Exception is Occurred" + e);
+		}
+		return testForValidEmails(validEmails);
+	}
 }
